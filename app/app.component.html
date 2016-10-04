@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<body class="bg-fixed bg-1">
+
+<div class="main-container">
+  <div class="main wrapper clearfix">
+    <!-- Main Tab Container -->
+    <div id="tab-container" class="tab-container">
+      <!-- Tab List -->
+      <ul class='etabs'>
+        <li class='tab' id="tab-about">
+          <a routerLink="/about"><i class="icon-user"></i><span> About Me</span></a>
+        </li>
+        <li class='tab'>
+          <a routerLink="/resume"><i class="icon-file-text"></i><span> Resume</span></a>
+        </li>
+        <li class='tab'>
+          <a routerLink="/portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
+        </li>
+        <li class='tab'>
+          <a routerLink="/contactus"><i class="icon-envelope"></i><span> Contact</span></a>
+        </li>
+      </ul>
+      <!-- End Tab List -->
+    </div>
+    <!-- End Tab Container -->
+    <router-outlet></router-outlet>
+    <footer>
+      <p>
+        Designed by Ronak Thacker.
+      </p>
+    </footer>
+  </div><!-- #main -->
+</div><!-- #main-container -->
+</body>
